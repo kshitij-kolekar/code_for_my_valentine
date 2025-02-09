@@ -29,4 +29,18 @@ window.addEventListener("scroll", function () {
   }, { threshold: 0.3 });
 
   poemLines1.forEach(line => observer1.observe(line));
+
+  const poemLines2 = document.querySelectorAll(".menupoem");
+
+  const observer2 = new IntersectionObserver(entries => {
+    entries.forEach((entry, index) => {
+      if (entry.isIntersecting) {
+        setTimeout(() => {
+          entry.target.classList.toggle("visible", window.scrollY > 720);
+        }, index * 400);
+      }
+    });
+  }, { threshold: 0.3 });
+
+  poemLines2.forEach(line => observer2.observe(line));
 });
