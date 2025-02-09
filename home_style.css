@@ -1,5 +1,6 @@
 body {
     background: #50342e;
+    overflow: visible;
 }
 
 header {
@@ -45,7 +46,7 @@ span.poem {
 }
 
 span.poem.visible {
-    transform: translateX(671px) translateY(100px);
+    transform: translateX(647px) translateY(100px);
 }
 
 nav {
@@ -91,7 +92,7 @@ div.herotitle{
 div.heropoem{
     font-family: Dancing Script, cursive;
     margin-top: -300px;
-    margin-left: 35px;
+    margin-left: 34px;
     color: #ffb6d1;
     font-size: 25px;
     position: fixed;
@@ -100,7 +101,7 @@ div.heropoem{
 }
 
 div.heropoem.visible {
-    transform: translateX(1108px) translateY(-260px);
+    transform: translateX(1084px) translateY(-260px);
 }
 
 .coffee-mug {
@@ -132,16 +133,18 @@ div.heropoem.visible {
 
 div.menu {
     margin-top: 60px;
+    margin-left: 10px;
     padding-top: 10px;
     padding-left: 15px;
-    width: 1101px;
+    width: 1080px;
     height: 530px;
-    border-radius: 15px;
+    border-radius: 25px;
     background: #D2B48C;
 }
 
 div.menutext {
     margin-top: 15px;
+    margin-left: 25px;
 }
 
 h2.menutitle{
@@ -149,12 +152,12 @@ h2.menutitle{
     margin-left: 0px;
     display: inline;
     color:#FFF5E1;
-    font-size: 70px;
+    font-size: 60px;
     font-family: Playfair Display, serif;
 }
 
 div.menucardsection {
-    padding-top: 50px;
+    padding-top: 30px;
     padding-right: 15px;
     margin-top: 15px;
     display: flex;
@@ -163,7 +166,7 @@ div.menucardsection {
 
 div.menucard{
     width: 230px;
-    height: 300px;
+    height: 320px;
     padding : 12px;
     padding-top: 0px;
     padding-left: 0px;
@@ -240,7 +243,7 @@ div.card-from-text {
 div.menupoem{
     font-family: Dancing Script, cursive;
     margin-top: -422px;
-    margin-left: 1144px;
+    margin-left: 1119px;
     color: #ffb6d1;
     font-size: 25px;
     font-weight: 900;
@@ -252,4 +255,140 @@ div.menupoem{
 div.menupoem.visible{
     opacity: 1;
     font-weight: 100;
+}
+
+div.ing {
+    margin-top: 150px;
+    margin-left: 10px;
+    padding-top: 10px;
+    padding-left: 15px;
+    width: 1080px;
+    height: 1150px;
+    border-radius: 15px;
+    background: #D2B48C;
+}
+
+div.ingtitle {
+    margin-top: 15px;
+    margin-left: -15px;
+    text-align: center;
+}
+
+h2.ingtitle{
+    padding-top: 25px;
+    margin-left: 30px;
+    display: inline;
+    color:#FFF5E1;
+    font-size: 50px;
+    font-family: Playfair Display, serif;
+}
+
+div.ingcard {
+    margin-left: 10px;
+    margin-top: 50px;
+    width: 1040px;
+    height: 150px;
+    /* background-color: #704214; */
+    background: linear-gradient(to right, #6d3c0a, #e7ad60);
+    border-radius: 75px;
+    display: flex;
+}
+
+img.ingcard-img {
+    margin-top: -9px;
+    margin-left: -9px;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 7px solid black;
+}
+
+div.ingcardtext {
+    display: inline;
+    margin-left: 25px;
+    color: #3b1b0f;
+    font-family: Quicksand , sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+h2.ingcardtext {
+    margin: 0px;
+    margin-top: 25px;
+    font-family: Montserrat, sans-serif;
+    font-size: 50px;
+}
+
+div.ingcard-hidden{
+    margin-left: 10px;
+    margin-top: 50px;
+    width: 1040px;
+    height: 150px;
+    /* background-color: #704214; */
+    background: linear-gradient(to right, #6d3c0a, #e7ad60);
+    border-radius: 75px;
+}
+
+img.ingcard-img-hidden{
+    margin-top: -9px;
+    margin-left: -9px;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 7px solid black;
+}
+
+div.ingcardtext-hidden{
+    display: inline;
+    margin-left: 25px;
+    color: #3b1b0f;
+    font-family: Quicksand , sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+h2.ingcardtext-hidden {
+    margin: 0px;
+    margin-top: 25px;
+    font-family: Montserrat, sans-serif;
+    font-size: 50px;
+}
+
+div.not-hidden{
+    display: flex;
+    opacity: 1;
+    z-index: 1;
+}
+
+div.hidden{
+    margin-top: -164px;
+    height: 150px;
+    display: flex;
+    border-radius: 75px;
+    position: relative;
+    opacity: 0;
+    background: linear-gradient(to right, #6d3c0a, #e7ad60);
+    z-index: 2;
+    transition: opacity 5s ease-in-out;
+}
+
+div.hidden:hover{
+    opacity: 1;
+}
+
+div.ingpoem {
+    font-family: Dancing Script, cursive;
+    top: 475px;
+    left: 1127px;
+    color: #ffb6d1;
+    font-size: 25px;
+    font-weight: 900;
+    position: fixed;
+    display: block;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+div.ingpoem.visible{
+    opacity: 1;
 }

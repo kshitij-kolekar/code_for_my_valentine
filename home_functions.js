@@ -43,4 +43,23 @@ window.addEventListener("scroll", function () {
   }, { threshold: 0.3 });
 
   poemLines2.forEach(line => observer2.observe(line));
+
+  const poemLines3 = document.querySelectorAll(".ingpoem");
+
+  const observer3 = new IntersectionObserver(entries => {
+    entries.forEach((entry, index) => {
+      if (entry.isIntersecting) {
+        setTimeout(() => {
+          entry.target.classList.toggle("visible", window.scrollY > 1370);
+        }, index * 400);
+      }
+    });
+  }, { threshold: 0.3 });
+
+  poemLines3.forEach(line => observer3.observe(line));
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+  console.log("Page has fully loaded!");
+  document.querySelector(".ingpoem").style.display = "block";
 });
