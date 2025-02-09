@@ -15,6 +15,7 @@ header {
     padding-top: 15px;
     padding-bottom: 15px;
     position: fixed;
+    z-index: 2;
     width: 95%;
     height: 80px;
     transition: height 0.3s ease, background 0.3s ease;
@@ -171,6 +172,7 @@ div.menucard{
     position: relative;
     transform-style: preserve-3d;
     transition: transform 0.6s ease;
+    z-index: 1;
 }
 
 div.menucard:hover {

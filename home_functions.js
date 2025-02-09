@@ -36,7 +36,7 @@ window.addEventListener("scroll", function () {
     entries.forEach((entry, index) => {
       if (entry.isIntersecting) {
         setTimeout(() => {
-          entry.target.classList.toggle("visible", window.scrollY > 720);
+          entry.target.classList.toggle("visible", window.scrollY > 650);
         }, index * 400);
       }
     });
