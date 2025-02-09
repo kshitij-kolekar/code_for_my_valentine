@@ -237,22 +237,17 @@ div.card-from-text {
 
 div.menupoem{
     font-family: Dancing Script, cursive;
-    margin-top: -520px;
-    margin-left: 735px;
-    color: #45322f;
+    margin-top: -422px;
+    margin-left: 1144px;
+    color: #ffb6d1;
     font-size: 25px;
     font-weight: 900;
-    position: relative;
-    transform: translateX(0px) translateY(0px);
-    /* transform: translateX(735px) translateY(-520px); */
-    transition: opacity 1s ease, transform 1s ease;
+    position: fixed;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
 }
 
 div.menupoem.visible{
-    /* transform: translateX(1144px) translateY(-1025px); */
-    transform: translateX(409px) translateY(-505px);
-    /* transform: translateX(100px) translateY(100px); */
-    color: #ffb6d1;
+    opacity: 1;
     font-weight: 100;
-    position: fixed;
 }
