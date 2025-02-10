@@ -24,6 +24,7 @@ header {
 
 header.small {
     height: 60px;
+    width: 70%;
     background: #4d221aaf;
 }
 
@@ -46,7 +47,8 @@ span.poem {
 }
 
 span.poem.visible {
-    transform: translateX(647px) translateY(100px);
+    font-size: 20px;
+    transform: translateX(850px) translateY(-20px);
 }
 
 nav {
@@ -101,7 +103,8 @@ div.heropoem{
 }
 
 div.heropoem.visible {
-    transform: translateX(1084px) translateY(-260px);
+    font-size: 20px;
+    transform: translateX(1131px) translateY(-390px);
 }
 
 .coffee-mug {
@@ -242,10 +245,10 @@ div.card-from-text {
 
 div.menupoem{
     font-family: Dancing Script, cursive;
-    margin-top: -422px;
-    margin-left: 1119px;
+    margin-top: -579px;
+    margin-left: 1166px;
     color: #ffb6d1;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 900;
     position: fixed;
     opacity: 0;
@@ -253,12 +256,12 @@ div.menupoem{
 }
 
 div.menupoem.visible{
-    opacity: 1;
     font-weight: 100;
+    opacity: 1;
 }
 
 div.ing {
-    margin-top: 150px;
+    margin-top: 200px;
     margin-left: 10px;
     padding-top: 10px;
     padding-left: 15px;
@@ -378,10 +381,10 @@ div.hidden:hover{
 
 div.ingpoem {
     font-family: Dancing Script, cursive;
-    top: 475px;
-    left: 1127px;
+    top: 293px;
+    left: 1176px;
     color: #ffb6d1;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 900;
     position: fixed;
     display: block;
@@ -390,5 +393,56 @@ div.ingpoem {
 }
 
 div.ingpoem.visible{
+    opacity: 1;
+}
+
+div.brewtimepoem{
+    font-family: Dancing Script, cursive;
+    top: 405px;
+    left: 1176px;
+    color: #ffb6d1;
+    font-size: 20px;
+    font-weight: 900;
+    position: fixed;
+    display: block;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+div.brewtimepoem.visible{
+    opacity: 1;
+}
+
+div.tablepoem{
+    font-family: Dancing Script, cursive;
+    top: 515px;
+    left: 1176px;
+    color: #ffb6d1;
+    font-size: 20px;
+    font-weight: 900;
+    position: fixed;
+    display: block;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+div.tablepoem.visible{
+    opacity: 1;
+}
+
+div.orderpoem{
+    font-family: Dancing Script, cursive;
+    top: 625px;
+    left: 1176px;
+    color: #ffb6d1;
+    font-size: 20px;
+    font-weight: 900;
+    position: fixed;
+    display: block;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+div.orderpoem.visible{
     opacity: 1;
 }

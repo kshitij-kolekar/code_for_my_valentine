@@ -50,13 +50,55 @@ window.addEventListener("scroll", function () {
     entries.forEach((entry, index) => {
       if (entry.isIntersecting) {
         setTimeout(() => {
-          entry.target.classList.toggle("visible", window.scrollY > 1370);
+          entry.target.classList.toggle("visible", window.scrollY > 1420);
         }, index * 400);
       }
     });
   }, { threshold: 0.3 });
 
   poemLines3.forEach(line => observer3.observe(line));
+
+  const poemLines4 = document.querySelectorAll(".brewtimepoem");
+
+  const observer4 = new IntersectionObserver(entries => {
+    entries.forEach((entry, index) => {
+      if (entry.isIntersecting) {
+        setTimeout(() => {
+          entry.target.classList.toggle("visible", window.scrollY > 1420);
+        }, index * 400);
+      }
+    });
+  }, { threshold: 0.3 });
+
+  poemLines4.forEach(line => observer4.observe(line));
+
+  const poemLines5 = document.querySelectorAll(".tablepoem");
+
+  const observer5 = new IntersectionObserver(entries => {
+    entries.forEach((entry, index) => {
+      if (entry.isIntersecting) {
+        setTimeout(() => {
+          entry.target.classList.toggle("visible", window.scrollY > 1420);
+        }, index * 400);
+      }
+    });
+  }, { threshold: 0.3 });
+
+  poemLines5.forEach(line => observer5.observe(line));
+
+  const poemLines6 = document.querySelectorAll(".orderpoem");
+
+  const observer6 = new IntersectionObserver(entries => {
+    entries.forEach((entry, index) => {
+      if (entry.isIntersecting) {
+        setTimeout(() => {
+          entry.target.classList.toggle("visible", window.scrollY > 1420);
+        }, index * 400);
+      }
+    });
+  }, { threshold: 0.3 });
+
+  poemLines6.forEach(line => observer6.observe(line));
 });
 
 document.addEventListener("DOMContentLoaded", function() {
