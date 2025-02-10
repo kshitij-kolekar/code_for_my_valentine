@@ -396,7 +396,7 @@ div.ingpoem.visible{
     opacity: 1;
 }
 
-div.brewtimepoem{
+div.processpoem{
     font-family: Dancing Script, cursive;
     top: 405px;
     left: 1176px;
@@ -409,7 +409,7 @@ div.brewtimepoem{
     transition: opacity 1s ease-in-out;
 }
 
-div.brewtimepoem.visible{
+div.processpoem.visible{
     opacity: 1;
 }
 
@@ -445,4 +445,126 @@ div.orderpoem{
 
 div.orderpoem.visible{
     opacity: 1;
+}
+
+div.process{
+    margin-top: 200px;
+    margin-left: 10px;
+    padding-top: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 1000px;
+    height: 1500px;
+    border-radius: 15px;
+    background: #D2B48C;
+    position: relative;
+}
+
+div.process-title{
+    padding-top: 10px;
+    padding-bottom: 25px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    text-align: center;
+    /* color:#EAD196; */
+    /* color:#704214; */
+    color: #FAE3D9;
+    font-size: 75px;
+    font-weight: 900;
+    font-family: Patrick Hand, static;
+    background: #6b3702;
+    border-radius: 75px;
+}
+
+div.process-container{
+    position: relative;
+    padding: 20px 0;
+}
+
+div.process-container::before{
+    content: "";
+    position: absolute;
+    margin-top: -50px;
+    left: 50%;
+    width: 4px;
+    height: 109%;
+    background: #3f2300;
+    transform: translateX(-50%);
+}
+
+div.process-item {
+    position: relative;
+    width: 50%;
+    padding: 20px;
+    border-radius: 100px;
+    box-sizing: border-box;
+}
+
+div.process-item::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -7px;
+    width: 15px;
+    height: 15px;
+    background: #6f4e37;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+div.proecss-item .content{
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+div.process-item .content h2{
+    font-family: 'Playfair Display', serif;
+    color: #4D2C19;
+}
+
+div.process-item .content p{
+    color: #3E2723;
+}
+
+div.process-item.left{
+    background: linear-gradient(to left, #704214, #FFF3E0);
+    text-align: center;
+    left: 0;
+}
+
+div.proecss-item.left::before {
+    right: -10px;
+}
+
+div.process-item.right {
+    background: linear-gradient(to right, #704214, #FFF3E0);
+    text-align: center;
+    left: 50%;
+}
+
+div.process-item.right::before {
+    left: -10px;
+}
+
+div.process-conclusion-outter{
+    display: flex;
+    justify-content: center;
+}
+
+div.process-conclusion{
+    background: linear-gradient(to bottom, #704214, #FFF3E0);
+    width: 75%;
+    margin-top: 62px;
+    padding: 40px;
+    border-radius: 100px;
+    text-align: center;
+    font-family: Patrick Hand, cursive;
+    font-size: 30px;
+    font-weight: 500;
+    color: #3E2723;
+    box-sizing: border-box;
 }

@@ -58,13 +58,13 @@ window.addEventListener("scroll", function () {
 
   poemLines3.forEach(line => observer3.observe(line));
 
-  const poemLines4 = document.querySelectorAll(".brewtimepoem");
+  const poemLines4 = document.querySelectorAll(".processpoem");
 
   const observer4 = new IntersectionObserver(entries => {
     entries.forEach((entry, index) => {
       if (entry.isIntersecting) {
         setTimeout(() => {
-          entry.target.classList.toggle("visible", window.scrollY > 1420);
+          entry.target.classList.toggle("visible", window.scrollY > 2770);
         }, index * 400);
       }
     });
@@ -78,7 +78,7 @@ window.addEventListener("scroll", function () {
     entries.forEach((entry, index) => {
       if (entry.isIntersecting) {
         setTimeout(() => {
-          entry.target.classList.toggle("visible", window.scrollY > 1420);
+          entry.target.classList.toggle("visible", window.scrollY > 2770);
         }, index * 400);
       }
     });
@@ -92,7 +92,7 @@ window.addEventListener("scroll", function () {
     entries.forEach((entry, index) => {
       if (entry.isIntersecting) {
         setTimeout(() => {
-          entry.target.classList.toggle("visible", window.scrollY > 1420);
+          entry.target.classList.toggle("visible", window.scrollY > 2770);
         }, index * 400);
       }
     });
