@@ -72,13 +72,13 @@ window.addEventListener("scroll", function () {
 
   poemLines4.forEach(line => observer4.observe(line));
 
-  const poemLines5 = document.querySelectorAll(".tablepoem");
+  const poemLines5 = document.querySelectorAll(".cafepoem");
 
   const observer5 = new IntersectionObserver(entries => {
     entries.forEach((entry, index) => {
       if (entry.isIntersecting) {
         setTimeout(() => {
-          entry.target.classList.toggle("visible", window.scrollY > 2770);
+          entry.target.classList.toggle("visible", window.scrollY > 4475);
         }, index * 400);
       }
     });
@@ -92,7 +92,7 @@ window.addEventListener("scroll", function () {
     entries.forEach((entry, index) => {
       if (entry.isIntersecting) {
         setTimeout(() => {
-          entry.target.classList.toggle("visible", window.scrollY > 2770);
+          entry.target.classList.toggle("visible", window.scrollY > 4475);
         }, index * 400);
       }
     });

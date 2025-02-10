@@ -48,7 +48,7 @@ span.poem {
 
 span.poem.visible {
     font-size: 20px;
-    transform: translateX(850px) translateY(-20px);
+    transform: translateX(816px) translateY(-20px);
 }
 
 nav {
@@ -91,22 +91,6 @@ div.herotitle{
     padding-bottom: 20px;
 }
 
-div.heropoem{
-    font-family: Dancing Script, cursive;
-    margin-top: -300px;
-    margin-left: 34px;
-    color: #ffb6d1;
-    font-size: 25px;
-    position: fixed;
-    transform: translateX(0px) translateY(0px);
-    transition: opacity 1s ease, transform 1s ease;
-}
-
-div.heropoem.visible {
-    font-size: 20px;
-    transform: translateX(1131px) translateY(-390px);
-}
-
 .coffee-mug {
     margin-top: 150px;
     width: 300px;
@@ -132,6 +116,39 @@ div.heropoem.visible {
     left: 839px;
     opacity: 0;
     animation: steam 3s infinite;
+}
+
+div.heropoem{
+    font-family: Dancing Script, cursive;
+    margin-top: -300px;
+    margin-left: 34px;
+    color: #ffb6d1;
+    font-size: 25px;
+    position: fixed;
+    transform: translateX(0px) translateY(0px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+div.heropoem.visible {
+    font-size: 20px;
+    transform: translateX(1131px) translateY(-390px);
+}
+
+div.menupoem{
+    font-family: Dancing Script, cursive;
+    margin-top: -579px;
+    margin-left: 1166px;
+    color: #ffb6d1;
+    font-size: 20px;
+    font-weight: 900;
+    position: fixed;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+div.menupoem.visible{
+    font-weight: 100;
+    opacity: 1;
 }
 
 div.menu {
@@ -243,20 +260,20 @@ div.card-from-text {
     font-size: 30px;
 }
 
-div.menupoem{
+div.ingpoem {
     font-family: Dancing Script, cursive;
-    margin-top: -579px;
-    margin-left: 1166px;
+    top: 293px;
+    left: 1176px;
     color: #ffb6d1;
     font-size: 20px;
     font-weight: 900;
     position: fixed;
+    display: block;
     opacity: 0;
     transition: opacity 1s ease-in-out;
 }
 
-div.menupoem.visible{
-    font-weight: 100;
+div.ingpoem.visible{
     opacity: 1;
 }
 
@@ -379,23 +396,6 @@ div.hidden:hover{
     opacity: 1;
 }
 
-div.ingpoem {
-    font-family: Dancing Script, cursive;
-    top: 293px;
-    left: 1176px;
-    color: #ffb6d1;
-    font-size: 20px;
-    font-weight: 900;
-    position: fixed;
-    display: block;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-}
-
-div.ingpoem.visible{
-    opacity: 1;
-}
-
 div.processpoem{
     font-family: Dancing Script, cursive;
     top: 405px;
@@ -410,40 +410,6 @@ div.processpoem{
 }
 
 div.processpoem.visible{
-    opacity: 1;
-}
-
-div.tablepoem{
-    font-family: Dancing Script, cursive;
-    top: 515px;
-    left: 1176px;
-    color: #ffb6d1;
-    font-size: 20px;
-    font-weight: 900;
-    position: fixed;
-    display: block;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-}
-
-div.tablepoem.visible{
-    opacity: 1;
-}
-
-div.orderpoem{
-    font-family: Dancing Script, cursive;
-    top: 625px;
-    left: 1176px;
-    color: #ffb6d1;
-    font-size: 20px;
-    font-weight: 900;
-    position: fixed;
-    display: block;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-}
-
-div.orderpoem.visible{
     opacity: 1;
 }
 
@@ -556,7 +522,6 @@ div.process-conclusion-outter{
 }
 
 div.process-conclusion{
-    background: linear-gradient(to bottom, #704214, #FFF3E0);
     width: 75%;
     margin-top: 62px;
     padding: 40px;
@@ -566,5 +531,133 @@ div.process-conclusion{
     font-size: 30px;
     font-weight: 500;
     color: #3E2723;
+    background: linear-gradient(to bottom, #704214, #FFF3E0);
     box-sizing: border-box;
+}
+
+div.cafepoem{
+    font-family: Dancing Script, cursive;
+    top: 515px;
+    left: 1176px;
+    color: #ffb6d1;
+    font-size: 20px;
+    font-weight: 900;
+    position: fixed;
+    display: block;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+div.cafepoem.visible{
+    opacity: 1;
+}
+
+div.cafe{
+    margin-top: 200px;
+    margin-left: 10px;
+    padding-top: 10px;
+    padding-left: 15px;
+    width: 1080px;
+    height: 590px;
+    border-radius: 15px;
+    background: #D2B48C;
+}
+
+div.cafetitle{
+    margin-top: 15px;
+    font-family: 'Playfair Display', serif;
+    font-size: 50px;
+    font-weight: bold;
+    color: #b37802;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+div.cafeinner{
+    margin-top: 15px;
+    display: flex;
+}
+
+div.cafeinner2{
+    width: 50%;
+}
+
+div.cafeonelinepoem{
+    margin-bottom: 30px;
+    margin-left: 50px;
+    padding-top: 30px;
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+    color: #6d3c0a;
+    font-style: italic;
+    /* text-align: center; */
+    text-shadow: 1px 1px 4px rgba(251, 100, 155, 0.6);
+    margin-top: 15px;
+}
+
+div.cafediscription{
+    padding-left: 50px;
+    font-family: 'Lora', serif;
+    font-size: 20px;
+    color: #3b1b0f;
+    /* text-align: center; */
+    max-width: 600px;
+    margin: 0 auto 20px auto;
+    line-height: 1.6;
+}
+
+div.cafeimg{
+    width: 40%;
+}
+
+img.cafeimg{
+    width: 100%;
+    height: 100%;
+    border: 4px rgb(0, 0, 0) solid;
+    border-radius: 25px;
+    box-shadow: 20px 25px 10px rgba(0, 0, 0, 0.762);
+}
+
+div.cafebutton{
+    margin-top: 25px;
+    margin-left: 75px;
+}
+
+button.cafebutton{
+    padding: 12px 24px;
+    width: 200px;
+    height: 75px;
+    font-family: 'Lora', serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #4D2C19;
+    background: linear-gradient(135deg, #FFB6D1, #D27D9B);
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+}
+
+button.cafebutton:hover{
+    background: linear-gradient(135deg, #D27D9B, #FFB6D1);
+    transform: scale(1.1);
+}
+
+div.orderpoem{
+    font-family: Dancing Script, cursive;
+    top: 625px;
+    left: 1176px;
+    color: #ffb6d1;
+    font-size: 20px;
+    font-weight: 900;
+    position: fixed;
+    display: block;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+div.orderpoem.visible{
+    opacity: 1;
 }
