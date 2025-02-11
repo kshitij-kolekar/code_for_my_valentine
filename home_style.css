@@ -1,8 +1,10 @@
+/* Whole Body */
 body {
     background: #50342e;
     overflow: visible;
 }
 
+/* Header */
 header {
     /* background: #3E2723; */
     background: #311712;
@@ -22,12 +24,14 @@ header {
     transition: height 0.3s ease, background 0.3s ease;
 }
 
+/* Header After Scroll */
 header.small {
     height: 60px;
     width: 70%;
     background: #4d221aaf;
 }
 
+/* Title In Heading  */
 span.titles {
     font-family: Playfair Display, serif;
     color: #FFF3E0;
@@ -37,6 +41,7 @@ h1 {
     display: inline;
 }
 
+/* Poem In Header  */
 span.poem {
     top: 33px;
     left: 516px;
@@ -48,11 +53,13 @@ span.poem {
     transition: opacity 1s ease, transform 1s ease;
 }
 
+/* Poem In Header After Scroll  */
 span.poem.visible {
     font-size: 20px;
     transform: translateX(658px) translateY(-20px);
 }
 
+/* Navigation  */
 nav {
     font-family: Montserrat, sans-serif;
     font-weight: 600;
@@ -69,6 +76,7 @@ a.navi:hover {
     color: #ffb6d1;
 }
 
+/* Home Page  */
 #welcome {
     scroll-margin-top: 150px;
 }
@@ -97,6 +105,7 @@ div.herotitle {
     padding-bottom: 20px;
 }
 
+/* Coffee Mug Image  */
 .coffee-mug {
     margin-top: 150px;
     width: 300px;
@@ -107,6 +116,7 @@ div.herotitle {
     align-content: center;
 }
 
+/* Steram Above Coffee Mug  */
 @keyframes steam {
     0% {
         opacity: 0;
@@ -131,6 +141,7 @@ div.herotitle {
     animation: steam 3s infinite;
 }
 
+/* Poem On Welcome Screen */
 div.heropoem {
     font-family: Dancing Script, cursive;
     margin-top: -300px;
@@ -142,11 +153,13 @@ div.heropoem {
     transition: opacity 1s ease, transform 1s ease;
 }
 
+/* Poem On Welcome Screen After Scroll  */
 div.heropoem.visible {
     font-size: 20px;
     transform: translateX(1131px) translateY(-390px);
 }
 
+/* Poem On Menu Section  */
 div.menupoem {
     font-family: Dancing Script, cursive;
     margin-top: -579px;
@@ -159,11 +172,13 @@ div.menupoem {
     transition: opacity 1s ease-in-out;
 }
 
+/* Poem On Menu Section After Scroll  */
 div.menupoem.visible {
     font-weight: 100;
     opacity: 1;
 }
 
+/* Menu Section */
 #menu {
     scroll-margin-top: 150px;
 }
@@ -179,6 +194,7 @@ div.menu {
     background: #D2B48C;
 }
 
+/* Menu Section Title */
 div.menutext {
     margin-top: 15px;
     margin-left: 25px;
@@ -193,6 +209,7 @@ h2.menutitle {
     font-family: Playfair Display, serif;
 }
 
+/* Items In Menu Section */
 div.menucardsection {
     padding-top: 30px;
     padding-right: 15px;
@@ -201,6 +218,7 @@ div.menucardsection {
     justify-content: space-around;
 }
 
+/* Individual Cards From Menu Section */
 div.menucard {
     width: 230px;
     height: 320px;
@@ -215,13 +233,13 @@ div.menucard {
     z-index: 1;
 }
 
+/* Individual Cards From Menu Section After Hover */
 div.menucard:hover {
     transform: rotateY(180deg);
     box-shadow: -15px 25px 10px rgba(0, 0, 0, 0.762);
 }
 
-div.card-front,
-div.card-back {
+div.card-front, div.card-back {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -243,6 +261,7 @@ div.card-back {
     transform: rotateY(180deg);
 }
 
+/* Design Inside Cards */
 div.card-back-in {
     margin: 15px;
 }
@@ -278,6 +297,7 @@ div.card-from-text {
     font-size: 30px;
 }
 
+/* Poem In Ingredient Section */
 div.ingpoem {
     font-family: Dancing Script, cursive;
     top: 293px;
@@ -291,10 +311,12 @@ div.ingpoem {
     transition: opacity 1s ease-in-out;
 }
 
+/* Poem In Ingredient Section After Scroll */
 div.ingpoem.visible {
     opacity: 1;
 }
 
+/* Ingredient Section */
 #blend {
     scroll-margin-top: 130px;
 }
@@ -310,6 +332,7 @@ div.ing {
     background: #D2B48C;
 }
 
+/* Title Of Ingredient Section */
 div.ingtitle {
     margin-top: 15px;
     margin-left: -15px;
@@ -325,6 +348,7 @@ h2.ingtitle {
     font-family: Playfair Display, serif;
 }
 
+/* Items In Ingredient Section */
 div.ingcard {
     margin-left: 10px;
     margin-top: 50px;
@@ -361,6 +385,31 @@ h2.ingcardtext {
     font-size: 50px;
 }
 
+/* Initially Not Hidden Section */
+div.not-hidden {
+    display: flex;
+    opacity: 1;
+    z-index: 1;
+}
+
+/* Initially Hidden Section */
+div.hidden {
+    margin-top: -164px;
+    height: 150px;
+    display: flex;
+    border-radius: 75px;
+    position: relative;
+    opacity: 0;
+    background: linear-gradient(to right, #6d3c0a, #e7ad60);
+    z-index: 2;
+    transition: opacity 5s ease-in-out;
+}
+
+div.hidden:hover {
+    opacity: 1;
+}
+
+/* Hidden Ingredient Design */
 div.ingcard-hidden {
     margin-left: 10px;
     margin-top: 50px;
@@ -396,28 +445,7 @@ h2.ingcardtext-hidden {
     font-size: 50px;
 }
 
-div.not-hidden {
-    display: flex;
-    opacity: 1;
-    z-index: 1;
-}
-
-div.hidden {
-    margin-top: -164px;
-    height: 150px;
-    display: flex;
-    border-radius: 75px;
-    position: relative;
-    opacity: 0;
-    background: linear-gradient(to right, #6d3c0a, #e7ad60);
-    z-index: 2;
-    transition: opacity 5s ease-in-out;
-}
-
-div.hidden:hover {
-    opacity: 1;
-}
-
+/* Poem In Brewing Section */
 div.processpoem {
     font-family: Dancing Script, cursive;
     top: 405px;
@@ -431,10 +459,12 @@ div.processpoem {
     transition: opacity 1s ease-in-out;
 }
 
+/* Poem In Brewing Section After Scroll */
 div.processpoem.visible {
     opacity: 1;
 }
 
+/* Brewing Section */
 #brewing {
     scroll-margin-top: 130px;
 }
@@ -452,6 +482,7 @@ div.process {
     position: relative;
 }
 
+/* Brewing Section Title */
 div.process-title {
     padding-top: 10px;
     padding-bottom: 25px;
@@ -469,11 +500,7 @@ div.process-title {
     border-radius: 75px;
 }
 
-div.process-container {
-    position: relative;
-    padding: 20px 0;
-}
-
+/* Center Line */
 div.process-container::before {
     content: "";
     position: absolute;
@@ -485,6 +512,12 @@ div.process-container::before {
     transform: translateX(-50%);
 }
 
+/* Items On Both Side Of Line */
+div.process-container {
+    position: relative;
+    padding: 20px 0;
+}
+
 div.process-item {
     position: relative;
     width: 50%;
@@ -493,6 +526,7 @@ div.process-item {
     box-sizing: border-box;
 }
 
+/* Dot On Center Line Adjustent To Each Item */
 div.process-item::before {
     content: "";
     position: absolute;
@@ -505,6 +539,7 @@ div.process-item::before {
     z-index: 1;
 }
 
+/* Items In Timeline Section */
 div.proecss-item .content {
     background: #fff;
     padding: 20px;
@@ -522,6 +557,7 @@ div.process-item .content p {
     color: #3E2723;
 }
 
+/* Item On The Left Side On Center Line */
 div.process-item.left {
     background: linear-gradient(to left, #704214, #FFF3E0);
     text-align: center;
@@ -532,6 +568,7 @@ div.proecss-item.left::before {
     right: -10px;
 }
 
+/* Item On The Right Side On Center Line */
 div.process-item.right {
     background: linear-gradient(to right, #704214, #FFF3E0);
     text-align: center;
@@ -542,6 +579,7 @@ div.process-item.right::before {
     left: -10px;
 }
 
+/* Conclusion Section In TImeline Section */
 div.process-conclusion-outter {
     display: flex;
     justify-content: center;
@@ -561,6 +599,7 @@ div.process-conclusion {
     box-sizing: border-box;
 }
 
+/* Poem Of Table For Two Section */
 div.cafepoem {
     font-family: Dancing Script, cursive;
     top: 515px;
@@ -574,10 +613,12 @@ div.cafepoem {
     transition: opacity 1s ease-in-out;
 }
 
+/* Poem Of Table For Two Section After Scroll */
 div.cafepoem.visible {
     opacity: 1;
 }
 
+/* Table For Two Section */
 #table {
     scroll-margin-top: 130px;
 }
@@ -593,6 +634,7 @@ div.cafe {
     background: #D2B48C;
 }
 
+/* Table For Two Section Title */
 div.cafetitle {
     margin-top: 15px;
     font-family: 'Playfair Display', serif;
@@ -610,10 +652,12 @@ div.cafeinner {
     display: flex;
 }
 
+/* Text Section In Table For Two Section */
 div.cafeinner2 {
     width: 50%;
 }
 
+/* Poem Inside Text Section In Table For Two Section */
 div.cafeonelinepoem {
     margin-bottom: 30px;
     margin-left: 50px;
@@ -627,6 +671,7 @@ div.cafeonelinepoem {
     margin-top: 15px;
 }
 
+/* Discription Inside Text Section In Table For Two Section */
 div.cafediscription {
     padding-left: 50px;
     font-family: 'Lora', serif;
@@ -638,6 +683,7 @@ div.cafediscription {
     line-height: 1.6;
 }
 
+/* Image Section In Table For Two Section */
 div.cafeimg {
     width: 40%;
 }
@@ -650,6 +696,7 @@ img.cafeimg {
     box-shadow: 20px 25px 10px rgba(0, 0, 0, 0.762);
 }
 
+/* Button In Table For Two Section Which Triggers The Dialogue Box */
 div.cafebutton {
     margin-top: 25px;
     margin-left: 75px;
@@ -675,6 +722,7 @@ button.cafebutton:hover {
     transform: scale(1.1);
 }
 
+/* Poem In Question Section */
 div.orderpoem {
     font-family: Dancing Script, cursive;
     top: 625px;
@@ -688,10 +736,12 @@ div.orderpoem {
     transition: opacity 1s ease-in-out;
 }
 
+/* Poem In Question Section After Scroll */
 div.orderpoem.visible.enable {
     opacity: 1;
 }
 
+/* Question Dialogue Box */
 div.question {
     display: none;
     position: fixed;
@@ -718,6 +768,7 @@ div.question {
     }
 }
 
+/* Buttons In Question Dialogue Box */
 button.questionbtn {
     margin: 10px;
     padding: 12px 24px;
@@ -729,6 +780,7 @@ button.questionbtn {
     transition: all 0.3s ease-in-out;
 }
 
+/* Yes Button In Question Dialogue Box */
 #yes-btn {
     background: #FFB6D1;
     color: #4D2C19;
@@ -740,6 +792,7 @@ button.questionbtn {
     transform: scale(1.1);
 }
 
+/* No Button In Question Dialogue Box */
 #no-btn {
     background: #D2B48C;
     color: #3E2723;
@@ -750,6 +803,7 @@ button.questionbtn {
     background: #A67B5B;
 }
 
+/* Confetti Animations Which Appear After Yes As An Answer */
 .confetti-container {
     position: fixed;
     width: 100%;
