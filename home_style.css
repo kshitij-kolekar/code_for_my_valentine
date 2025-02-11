@@ -38,17 +38,19 @@ h1 {
 }
 
 span.poem {
+    top: 33px;
+    left: 516px;
     font-family: Dancing Script, cursive;
     color: #ffb6d1;
     font-size: 25px;
-    position: relative;
+    position: fixed;
     transform: translateX(0px) translateY(0px);
     transition: opacity 1s ease, transform 1s ease;
 }
 
 span.poem.visible {
     font-size: 20px;
-    transform: translateX(816px) translateY(-20px);
+    transform: translateX(658px) translateY(-20px);
 }
 
 nav {
@@ -65,6 +67,10 @@ a.navi {
 
 a.navi:hover {
     color: #ffb6d1;
+}
+
+#welcome {
+    scroll-margin-top: 150px;
 }
 
 div.hero {
@@ -156,6 +162,10 @@ div.menupoem {
 div.menupoem.visible {
     font-weight: 100;
     opacity: 1;
+}
+
+#menu {
+    scroll-margin-top: 150px;
 }
 
 div.menu {
@@ -283,6 +293,10 @@ div.ingpoem {
 
 div.ingpoem.visible {
     opacity: 1;
+}
+
+#blend {
+    scroll-margin-top: 130px;
 }
 
 div.ing {
@@ -419,6 +433,10 @@ div.processpoem {
 
 div.processpoem.visible {
     opacity: 1;
+}
+
+#brewing {
+    scroll-margin-top: 130px;
 }
 
 div.process {
@@ -560,6 +578,10 @@ div.cafepoem.visible {
     opacity: 1;
 }
 
+#table {
+    scroll-margin-top: 130px;
+}
+
 div.cafe {
     margin-top: 200px;
     margin-left: 10px;
@@ -666,7 +688,7 @@ div.orderpoem {
     transition: opacity 1s ease-in-out;
 }
 
-div.orderpoem.visible {
+div.orderpoem.visible.enable {
     opacity: 1;
 }
 

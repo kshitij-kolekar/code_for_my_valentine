@@ -2,117 +2,59 @@ window.addEventListener("scroll", function () {
   let header = document.querySelector("header");
   header.classList.toggle("small", window.scrollY > 50);
 
-  const poemLines = document.querySelectorAll(".poem");
+  let poemLines = document.querySelector(".poem");
+  poemLines.classList.toggle("visible", window.scrollY > 50);
 
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach((entry, index) => {
-      if (entry.isIntersecting) {
-        setTimeout(() => {
-          entry.target.classList.toggle("visible", window.scrollY > 50);
-        }, index * 400);
-      }
-    });
-  }, { threshold: 0.3 });
+  let poemLines1 = document.querySelector(".heropoem");
+  poemLines1.classList.toggle("visible", window.scrollY > 50);
 
-  poemLines.forEach(line => observer.observe(line));
+  let poemLines2 = document.querySelector(".menupoem");
+  poemLines2.classList.toggle("visible", window.scrollY > 650);
 
-  const poemLines1 = document.querySelectorAll(".heropoem");
+  let poemLines3 = document.querySelector(".ingpoem");
+  poemLines3.classList.toggle("visible", window.scrollY > 1420);
 
-  const observer1 = new IntersectionObserver(entries => {
-    entries.forEach((entry, index) => {
-      if (entry.isIntersecting) {
-        setTimeout(() => {
-          entry.target.classList.toggle("visible", window.scrollY > 50);
-        }, index * 400);
-      }
-    });
-  }, { threshold: 0.3 });
+  let poemLines4 = document.querySelector(".processpoem");
+  poemLines4.classList.toggle("visible", window.scrollY > 2770);
 
-  poemLines1.forEach(line => observer1.observe(line));
+  let poemLines5 = document.querySelector(".cafepoem");
+  poemLines5.classList.toggle("visible", window.scrollY > 4475);
 
-  const poemLines2 = document.querySelectorAll(".menupoem");
-
-  const observer2 = new IntersectionObserver(entries => {
-    entries.forEach((entry, index) => {
-      if (entry.isIntersecting) {
-        setTimeout(() => {
-          entry.target.classList.toggle("visible", window.scrollY > 650);
-        }, index * 400);
-      }
-    });
-  }, { threshold: 0.3 });
-
-  poemLines2.forEach(line => observer2.observe(line));
-
-  const poemLines3 = document.querySelectorAll(".ingpoem");
-
-  const observer3 = new IntersectionObserver(entries => {
-    entries.forEach((entry, index) => {
-      if (entry.isIntersecting) {
-        setTimeout(() => {
-          entry.target.classList.toggle("visible", window.scrollY > 1420);
-        }, index * 400);
-      }
-    });
-  }, { threshold: 0.3 });
-
-  poemLines3.forEach(line => observer3.observe(line));
-
-  const poemLines4 = document.querySelectorAll(".processpoem");
-
-  const observer4 = new IntersectionObserver(entries => {
-    entries.forEach((entry, index) => {
-      if (entry.isIntersecting) {
-        setTimeout(() => {
-          entry.target.classList.toggle("visible", window.scrollY > 2770);
-        }, index * 400);
-      }
-    });
-  }, { threshold: 0.3 });
-
-  poemLines4.forEach(line => observer4.observe(line));
-
-  const poemLines5 = document.querySelectorAll(".cafepoem");
-
-  const observer5 = new IntersectionObserver(entries => {
-    entries.forEach((entry, index) => {
-      if (entry.isIntersecting) {
-        setTimeout(() => {
-          entry.target.classList.toggle("visible", window.scrollY > 4475);
-        }, index * 400);
-      }
-    });
-  }, { threshold: 0.3 });
-
-  poemLines5.forEach(line => observer5.observe(line));
-
-  const poemLines6 = document.querySelectorAll(".orderpoem");
-
-  const observer6 = new IntersectionObserver(entries => {
-    entries.forEach((entry, index) => {
-      if (entry.isIntersecting) {
-        setTimeout(() => {
-          entry.target.classList.toggle("visible", window.scrollY > 4475);
-        }, index * 400);
-      }
-    });
-  }, { threshold: 0.3 });
-
-  poemLines6.forEach(line => observer6.observe(line));
+  let poemLines6 = document.querySelector(".orderpoem");
+  poemLines6.classList.toggle("visible", window.scrollY > 4475)
 });
-
 
 document.addEventListener("DOMContentLoaded", function () {
   let questionButton = document.getElementById("questionbutton");
   let dialog = document.getElementById("valentine-dialog");
   let yesBtn = document.getElementById("yes-btn");
   let noBtn = document.getElementById("no-btn");
+  let poemLines6 = document.querySelector(".orderpoem");
+
+  let timesOpen = 1;
+  let yes = 0;
 
   questionButton.addEventListener("click", function () {
     setTimeout(() => {
-        dialog.style.display = "block";
-    }, 2000);
-});
+      dialog.style.display = "block";
+    }, 500);
+
+    if (timesOpen != 1) {
+      if (yes) {
+        setTimeout(() => {
+          createConfetti();
+        }, 500);
+        setTimeout(() => {
+          dialog.style.display = "none";
+        }, 10000);
+      } else {
+        setTimeout(() => {
+          dialog.style.display = "none";
+        }, 10000);
+      }
+    }
+    poemLines6.classList.add("enable");
+  });
 
   yesBtn.addEventListener("click", function () {
     dialog.innerHTML = "<h2>Yay! ❤️ You made my day!</h2><p>Now, let’s grab that coffee together ☕</p>";
@@ -120,6 +62,9 @@ document.addEventListener("DOMContentLoaded", function () {
     setTimeout(() => {
       dialog.style.display = "none";
     }, 10000);
+
+    timesOpen += 1;
+    yes = 1;
   });
 
   noBtn.addEventListener("mouseover", function () {
@@ -135,6 +80,8 @@ document.addEventListener("DOMContentLoaded", function () {
     setTimeout(() => {
       dialog.style.display = "none";
     }, 10000);
+
+    timesOpen += 1;
   });
 
   function createConfetti() {
