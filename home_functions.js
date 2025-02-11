@@ -101,7 +101,60 @@ window.addEventListener("scroll", function () {
   poemLines6.forEach(line => observer6.observe(line));
 });
 
-document.addEventListener("DOMContentLoaded", function() {
+
+document.addEventListener("DOMContentLoaded", function () {
+  let questionButton = document.getElementById("questionbutton");
+  let dialog = document.getElementById("valentine-dialog");
+  let yesBtn = document.getElementById("yes-btn");
+  let noBtn = document.getElementById("no-btn");
+
+  questionButton.addEventListener("click", function () {
+    setTimeout(() => {
+        dialog.style.display = "block";
+    }, 2000);
+});
+
+  yesBtn.addEventListener("click", function () {
+    dialog.innerHTML = "<h2>Yay! ❤️ You made my day!</h2><p>Now, let’s grab that coffee together ☕</p>";
+    createConfetti();
+    setTimeout(() => {
+      dialog.style.display = "none";
+    }, 10000);
+  });
+
+  noBtn.addEventListener("mouseover", function () {
+    let newX = Math.random() * (500 - 0);
+    let newY = Math.random() * (250 - 0);
+    noBtn.style.position = "absolute";
+    noBtn.style.left = newX + "px";
+    noBtn.style.top = newY + "px";
+  });
+
+  noBtn.addEventListener("click", function () {
+    dialog.innerHTML = "<h2>Are you sure? 🥺</h2><p>Maybe next year then? I'll be waiting... ☕💔</p>";
+    setTimeout(() => {
+      dialog.style.display = "none";
+    }, 10000);
+  });
+
+  function createConfetti() {
+    let confettiContainer = document.createElement("div");
+    confettiContainer.classList.add("confetti-container");
+    document.body.appendChild(confettiContainer);
+
+    for (let i = 0; i < 50; i++) {
+      let confetti = document.createElement("div");
+      confetti.classList.add("confetti");
+      confetti.style.left = Math.random() * 100 + "vw";
+      confetti.style.animationDuration = Math.random() * 3 + 2 + "s";
+      confettiContainer.appendChild(confetti);
+    }
+
+    setTimeout(() => confettiContainer.remove(), 10000);
+  }
+});
+
+document.addEventListener("DOMContentLoaded", function () {
   console.log("Page has fully loaded!");
   document.querySelector(".ingpoem").style.display = "block";
 });

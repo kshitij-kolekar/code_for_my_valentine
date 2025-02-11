@@ -76,12 +76,12 @@ div.hero {
     justify-content: space-between;
 }
 
-div.herotext{
+div.herotext {
     margin-top: -100px;
     align-content: center;
 }
 
-div.herotitle{
+div.herotitle {
     align-content: center;
     font-family: Patrick Hand, cursive;
     font-size: 50px;
@@ -102,8 +102,15 @@ div.herotitle{
 }
 
 @keyframes steam {
-    0% { opacity: 0; transform: translateY(0px); }
-    100% { opacity: 1; transform: translateY(-20px); }
+    0% {
+        opacity: 0;
+        transform: translateY(0px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(-20px);
+    }
 }
 
 .steam {
@@ -118,7 +125,7 @@ div.herotitle{
     animation: steam 3s infinite;
 }
 
-div.heropoem{
+div.heropoem {
     font-family: Dancing Script, cursive;
     margin-top: -300px;
     margin-left: 34px;
@@ -134,7 +141,7 @@ div.heropoem.visible {
     transform: translateX(1131px) translateY(-390px);
 }
 
-div.menupoem{
+div.menupoem {
     font-family: Dancing Script, cursive;
     margin-top: -579px;
     margin-left: 1166px;
@@ -146,7 +153,7 @@ div.menupoem{
     transition: opacity 1s ease-in-out;
 }
 
-div.menupoem.visible{
+div.menupoem.visible {
     font-weight: 100;
     opacity: 1;
 }
@@ -167,11 +174,11 @@ div.menutext {
     margin-left: 25px;
 }
 
-h2.menutitle{
+h2.menutitle {
     padding-top: 15px;
     margin-left: 0px;
     display: inline;
-    color:#FFF5E1;
+    color: #FFF5E1;
     font-size: 60px;
     font-family: Playfair Display, serif;
 }
@@ -184,10 +191,10 @@ div.menucardsection {
     justify-content: space-around;
 }
 
-div.menucard{
+div.menucard {
     width: 230px;
     height: 320px;
-    padding : 12px;
+    padding: 12px;
     padding-top: 0px;
     padding-left: 0px;
     border-radius: 12px;
@@ -203,7 +210,8 @@ div.menucard:hover {
     box-shadow: -15px 25px 10px rgba(0, 0, 0, 0.762);
 }
 
-div.card-front, div.card-back {
+div.card-front,
+div.card-back {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -229,14 +237,14 @@ div.card-back-in {
     margin: 15px;
 }
 
-div.card-back-title{
+div.card-back-title {
     text-align: center;
-    font-family: Quicksand , sans-serif;
+    font-family: Quicksand, sans-serif;
     font-size: 35px;
     font-weight: 900;
 }
 
-div.card-back-discription{
+div.card-back-discription {
     margin-top: 50px;
     font-family: Dancing Script, cursive;
     font-size: 25px;
@@ -247,16 +255,16 @@ div.cardimg {
     margin-left: 6px;
 }
 
-img.cardimg{
+img.cardimg {
     margin-top: 15px;
     margin-bottom: 15px;
-    width:230px;
+    width: 230px;
 }
 
 div.card-from-text {
     text-align: center;
     color: #FFF5E1;
-    font-family: Lato , static;
+    font-family: Lato, static;
     font-size: 30px;
 }
 
@@ -273,7 +281,7 @@ div.ingpoem {
     transition: opacity 1s ease-in-out;
 }
 
-div.ingpoem.visible{
+div.ingpoem.visible {
     opacity: 1;
 }
 
@@ -294,11 +302,11 @@ div.ingtitle {
     text-align: center;
 }
 
-h2.ingtitle{
+h2.ingtitle {
     padding-top: 25px;
     margin-left: 30px;
     display: inline;
-    color:#FFF5E1;
+    color: #FFF5E1;
     font-size: 50px;
     font-family: Playfair Display, serif;
 }
@@ -327,7 +335,7 @@ div.ingcardtext {
     display: inline;
     margin-left: 25px;
     color: #3b1b0f;
-    font-family: Quicksand , sans-serif;
+    font-family: Quicksand, sans-serif;
     font-size: 20px;
     font-weight: 500;
 }
@@ -339,7 +347,7 @@ h2.ingcardtext {
     font-size: 50px;
 }
 
-div.ingcard-hidden{
+div.ingcard-hidden {
     margin-left: 10px;
     margin-top: 50px;
     width: 1040px;
@@ -349,7 +357,7 @@ div.ingcard-hidden{
     border-radius: 75px;
 }
 
-img.ingcard-img-hidden{
+img.ingcard-img-hidden {
     margin-top: -9px;
     margin-left: -9px;
     width: 160px;
@@ -358,11 +366,11 @@ img.ingcard-img-hidden{
     border: 7px solid black;
 }
 
-div.ingcardtext-hidden{
+div.ingcardtext-hidden {
     display: inline;
     margin-left: 25px;
     color: #3b1b0f;
-    font-family: Quicksand , sans-serif;
+    font-family: Quicksand, sans-serif;
     font-size: 20px;
     font-weight: 500;
 }
@@ -374,13 +382,13 @@ h2.ingcardtext-hidden {
     font-size: 50px;
 }
 
-div.not-hidden{
+div.not-hidden {
     display: flex;
     opacity: 1;
     z-index: 1;
 }
 
-div.hidden{
+div.hidden {
     margin-top: -164px;
     height: 150px;
     display: flex;
@@ -392,11 +400,11 @@ div.hidden{
     transition: opacity 5s ease-in-out;
 }
 
-div.hidden:hover{
+div.hidden:hover {
     opacity: 1;
 }
 
-div.processpoem{
+div.processpoem {
     font-family: Dancing Script, cursive;
     top: 405px;
     left: 1176px;
@@ -409,11 +417,11 @@ div.processpoem{
     transition: opacity 1s ease-in-out;
 }
 
-div.processpoem.visible{
+div.processpoem.visible {
     opacity: 1;
 }
 
-div.process{
+div.process {
     margin-top: 200px;
     margin-left: 10px;
     padding-top: 10px;
@@ -426,7 +434,7 @@ div.process{
     position: relative;
 }
 
-div.process-title{
+div.process-title {
     padding-top: 10px;
     padding-bottom: 25px;
     margin-top: 40px;
@@ -443,12 +451,12 @@ div.process-title{
     border-radius: 75px;
 }
 
-div.process-container{
+div.process-container {
     position: relative;
     padding: 20px 0;
 }
 
-div.process-container::before{
+div.process-container::before {
     content: "";
     position: absolute;
     margin-top: -50px;
@@ -467,7 +475,7 @@ div.process-item {
     box-sizing: border-box;
 }
 
-div.process-item::before{
+div.process-item::before {
     content: "";
     position: absolute;
     top: 50%;
@@ -479,7 +487,7 @@ div.process-item::before{
     z-index: 1;
 }
 
-div.proecss-item .content{
+div.proecss-item .content {
     background: #fff;
     padding: 20px;
     border-radius: 10px;
@@ -487,16 +495,16 @@ div.proecss-item .content{
     position: relative;
 }
 
-div.process-item .content h2{
+div.process-item .content h2 {
     font-family: 'Playfair Display', serif;
     color: #4D2C19;
 }
 
-div.process-item .content p{
+div.process-item .content p {
     color: #3E2723;
 }
 
-div.process-item.left{
+div.process-item.left {
     background: linear-gradient(to left, #704214, #FFF3E0);
     text-align: center;
     left: 0;
@@ -516,12 +524,12 @@ div.process-item.right::before {
     left: -10px;
 }
 
-div.process-conclusion-outter{
+div.process-conclusion-outter {
     display: flex;
     justify-content: center;
 }
 
-div.process-conclusion{
+div.process-conclusion {
     width: 75%;
     margin-top: 62px;
     padding: 40px;
@@ -535,7 +543,7 @@ div.process-conclusion{
     box-sizing: border-box;
 }
 
-div.cafepoem{
+div.cafepoem {
     font-family: Dancing Script, cursive;
     top: 515px;
     left: 1176px;
@@ -548,11 +556,11 @@ div.cafepoem{
     transition: opacity 1s ease-in-out;
 }
 
-div.cafepoem.visible{
+div.cafepoem.visible {
     opacity: 1;
 }
 
-div.cafe{
+div.cafe {
     margin-top: 200px;
     margin-left: 10px;
     padding-top: 10px;
@@ -563,7 +571,7 @@ div.cafe{
     background: #D2B48C;
 }
 
-div.cafetitle{
+div.cafetitle {
     margin-top: 15px;
     font-family: 'Playfair Display', serif;
     font-size: 50px;
@@ -575,16 +583,16 @@ div.cafetitle{
     margin-bottom: 10px;
 }
 
-div.cafeinner{
+div.cafeinner {
     margin-top: 15px;
     display: flex;
 }
 
-div.cafeinner2{
+div.cafeinner2 {
     width: 50%;
 }
 
-div.cafeonelinepoem{
+div.cafeonelinepoem {
     margin-bottom: 30px;
     margin-left: 50px;
     padding-top: 30px;
@@ -597,7 +605,7 @@ div.cafeonelinepoem{
     margin-top: 15px;
 }
 
-div.cafediscription{
+div.cafediscription {
     padding-left: 50px;
     font-family: 'Lora', serif;
     font-size: 20px;
@@ -608,11 +616,11 @@ div.cafediscription{
     line-height: 1.6;
 }
 
-div.cafeimg{
+div.cafeimg {
     width: 40%;
 }
 
-img.cafeimg{
+img.cafeimg {
     width: 100%;
     height: 100%;
     border: 4px rgb(0, 0, 0) solid;
@@ -620,12 +628,12 @@ img.cafeimg{
     box-shadow: 20px 25px 10px rgba(0, 0, 0, 0.762);
 }
 
-div.cafebutton{
+div.cafebutton {
     margin-top: 25px;
     margin-left: 75px;
 }
 
-button.cafebutton{
+button.cafebutton {
     padding: 12px 24px;
     width: 200px;
     height: 75px;
@@ -640,12 +648,12 @@ button.cafebutton{
     transition: all 1s ease-in-out;
 }
 
-button.cafebutton:hover{
+button.cafebutton:hover {
     background: linear-gradient(135deg, #D27D9B, #FFB6D1);
     transform: scale(1.1);
 }
 
-div.orderpoem{
+div.orderpoem {
     font-family: Dancing Script, cursive;
     top: 625px;
     left: 1176px;
@@ -658,6 +666,94 @@ div.orderpoem{
     transition: opacity 1s ease-in-out;
 }
 
-div.orderpoem.visible{
+div.orderpoem.visible {
     opacity: 1;
+}
+
+div.question {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 245, 230, 0.95);
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -60%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}
+
+button.questionbtn {
+    margin: 10px;
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: all 0.3s ease-in-out;
+}
+
+#yes-btn {
+    background: #FFB6D1;
+    color: #4D2C19;
+    box-shadow: 2px 2px 5px rgba(255, 182, 209, 0.5);
+}
+
+#yes-btn:hover {
+    background: #D27D9B;
+    transform: scale(1.1);
+}
+
+#no-btn {
+    background: #D2B48C;
+    color: #3E2723;
+    position: relative;
+}
+
+#no-btn:hover {
+    background: #A67B5B;
+}
+
+.confetti-container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+.confetti {
+    width: 10px;
+    height: 10px;
+    background: pink;
+    position: absolute;
+    top: 0;
+    opacity: 0.7;
+    animation: confetti-fall linear infinite;
+}
+
+@keyframes confetti-fall {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+
+    100% {
+        transform: translateY(100vh) rotate(360deg);
+    }
 }
