@@ -88,11 +88,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Function For Moving No Button Away From Curser
   noBtn.addEventListener("mouseover", function () {
-    let newX = Math.random() * (500 - 0);
-    let newY = Math.random() * (250 - 0);
-    noBtn.style.position = "absolute";
-    noBtn.style.left = newX + "px";
-    noBtn.style.top = newY + "px";
+    setTimeout(() => {
+      let newX = Math.random() * (500 - 0);
+      let newY = Math.random() * (250 - 0);
+      noBtn.style.position = "absolute";
+      noBtn.style.left = newX + "px";
+      noBtn.style.top = newY + "px";
+    }, Math.random()*(100-0));
   });
 
   // No Button Function
